@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body mt-4">
+            <div class="container">
+              <!-- <a class="navbar-brand" href="#">Навбар</a> -->
+              <div class="block-test">
+                <img src="images/Logo.png" alt="Logo">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 w-50 d-flex justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark1" href="#Header">Забронировать</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark1" href="#luvolya">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark1" href="#photos">Галерея</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link text-dark1" href="#Feedback">Отзывы</a>
+                  </li>
+                  </li>
+                </ul>
+              <div>
+                <button type="button" class="btn btn-light" id="liveToastBtn">Войти</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                <img src="images/Logo2.svg" class="rounded me-2 img-help" alt="...">
+                <strong class="me-auto"></strong>
+                <small>Сейчас</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+                </div>
+                <div class="toast-body">
+                Вы успешно вошли в личный кабинет. Хорошего дня!
+                
+                </div>
+            </div>
+            </div>
+              </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="sec1 mt-4" id="Header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="header-helper ps-3">
+                        <h1 class="h1-header">Новый подход в создании отелей</h1>
+                        <p class="p-header mt-4">Вдохни инновации и начни менять свое представление о хорошем отдыхе</p>
+                        <div class="buttons-header mt-4">
+                            <button type="button" class="btn button-2 mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Забронировать</button>
+                            <button type="button" class="btn button-3"><a class="nav-link text-dark1" href="#rooms">Наши номера</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="images/Header-pic.png" class="img-fluid ps-5 img-header" alt="...">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="sec2" id="luvolya">
+        <div class="container">
+            <h2 class="h2-header">Где мы находимся?</h2>
+            <p class="p2-header">Наши отели находятся по всей России и оборудованы в соответствии с актуальными технологиями</p>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner justify-content-center">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-between">
+                        <div class="col d-flex justify-content-center ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Moscow.png" class="card-img-top" alt="...">
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Sochi.png" class="card-img-top" alt="...">
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kazan.png" class="card-img-top" alt="...">
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Omsk.png" class="card-img-top" alt="...">
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <section id="photos" class="sec3">
+        <div class="container">
+          <h2 class="h2-header">Фотогалерея</h2>
+          <p class="p2-header">Посмотри видео и пойми, почему наши клиенты никогда не уезжают разочарованными</p>
+          <img src="images/header3.png" class="img-fluid image3 " alt="...">
+          <button type="button" class="btn btn-light2 d-flex mx-auto" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Войдите в личный кабинет и добавьте фотографии в разделе «Мои фото»">
+            Как добавить свои фотографии?
+          </button>
+        </div>
+    </section>
+
+    <section id="rooms">
+      <div class="container">
+        <h2 class="h2-header">Наши номера</h2>
+        <div class="row mt-5">
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/pic1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Комфорт</h5>
+                <p class="card-text spec">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Забронировать
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/pic2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Семья</h5>
+                <p class="card-text spec">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Забронировать
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card" style="width: 18rem;">
+              <img src="images/pic3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Люкс</h5>
+                <p class="card-text spec">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Забронировать
+                </button>
+                <!-- Модальное окно -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Спасибо за ваше доверие к нашей компании!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                      </div>
+                      <div class="modal-body">
+                        Дата вашего заселения: 29.04.2023<br> 
+                        Дата вашего выезда: 04.05.2023
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-light">Позвонить для уточнения деталей</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec4" id="Feedback">
+      <div class="container">
+        <h2 class="h2-header">Оставьте о нас отзыв</h2>
+        <p class="p2-header">Мы всегда открыты к общению со своими клиентами усовершенствованию нашего сервиса, поэтому делитесь своими впечатлениями и помогите нам стать лучше</p>
+        <div class='row'>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Иван" required>
+              <div class="valid-feedback">
+                Все хорошо!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Петров" required>
+              <div class="valid-feedback">
+                Все хорошо!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">ID в телеграмме</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Пожалуйста, выберите имя пользователя.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ваш комментарий</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Укажите действующий город.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Город</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Москва</option>
+                <option>Сочи</option>
+                <option>Омск</option>
+                <option>Казань</option>
+              </select>
+              <div class="invalid-feedback">
+                Пожалуйста, выберите корректный город.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Оценка от 0 до 5</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Пожалуйста, предоставьте действующий почтовый индекс.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Примите условия и соглашения
+                </label>
+                <div class="invalid-feedback">
+                  Вы должны принять перед отправкой.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-light" type="submit">Отправить отзыв</button>
+            </div>
+          </form>
+          <div class="row col-lg-6 d-flex mx-auto mt-5 justify-content-center">
+            <img src="images/fOOTER.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec5">
+      <div class="container">
+        
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/spnew.png" class="img-fluid mt-5 mb-5" alt="...">
+            </div>
+            <div class="col-sm-3">     
+              <p class="text-white"><b>Услуги</b></p>
+              <p class="text-white">Номера</p>
+              <p class="text-white">Цены</p>     
+          </div>
+            <div class="col-sm-3">
+              <p class="text-white"><b>Информация</b></p>
+              <p class="text-white">Помощь</p>
+              <p class="text-white">О нас</p>    
+            </div>
+            <div class="col-sm-3">
+              <p class="text-white"><b>Конакты</b></p>
+              <p class="text-white">me@gmail.com</p>
+              <p class="text-white special">84999999999</p> 
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
